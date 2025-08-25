@@ -748,10 +748,13 @@ body {
   color: var(--black);
 }
 
+/* fall button meme */
 .skills__decorative-img {
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: 20px;
+  width: 200px; /* Slightly bigger than 80px */
+  height: auto;
   opacity: 0.7;
   transition: all 0.3s ease;
   animation: float 3s ease-in-out infinite;
@@ -810,6 +813,7 @@ body {
 .portfolio__decorative-img {
   position: absolute;
   left: 800px;
+  top: -40px;
   transition: all 0.3s ease;
   animation: gigachadFloat 4s ease-in-out infinite;
   z-index: 1;
