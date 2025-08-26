@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Ichwan — Portfolio",
-  description: "I build beautiful and functional websites that bring ideas to life.",
+  description:
+    "I build beautiful and functional websites that bring ideas to life.",
 };
 
 export default function RootLayout({
@@ -29,9 +31,7 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
 
         {/* Footer */}
         <footer className="footer">
@@ -41,12 +41,22 @@ export default function RootLayout({
               <div className="footer__brand">
                 <h3 className="footer__title">Muhammad Ichwan</h3>
                 <p className="footer__subtitle">Front-end Web Developer</p>
-                
+
                 <div className="footer__social">
-                  <a href="https://github.com/ichwan" className="social__link" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/ichwan"
+                    className="social__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
-                  <a href="https://farcaster.xyz/" className="social__link" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://farcaster.xyz/"
+                    className="social__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Farcaster
                   </a>
                   <a href="http://x.com/" className="social__link">
@@ -71,12 +81,14 @@ export default function RootLayout({
             {/* Bottom */}
             <div className="footer__bottom">
               <p className="footer__copyright">
-                © 2025 Muhammad Ichwan Nurul Alam. Built with Next.js & Tailwind CSS.
+                © 2025 Muhammad Ichwan Nurul Alam. Built with Next.js & Tailwind
+                CSS.
               </p>
             </div>
           </div>
         </footer>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
