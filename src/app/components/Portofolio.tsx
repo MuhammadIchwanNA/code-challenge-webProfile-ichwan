@@ -8,7 +8,7 @@ export default function PortfolioSection() {
 
         {/* Gigachad img */}
         <Image 
-          src="/Gigachad.png" 
+          src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/Gigachad.png" 
           alt="Gigachad meme" 
           width={200} 
           height={200}
@@ -20,7 +20,7 @@ export default function PortfolioSection() {
           <article className="card">
             <div className="card__media">
               <Image
-                src="/ecommerce.png"
+                src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/ecommerce.png"
                 alt="E-commerce mockup"
                 fill
                 sizes="(max-width: 1024px) 100vw, 360px"
@@ -42,7 +42,7 @@ export default function PortfolioSection() {
           <article className="card">
             <div className="card__media">
               <Image
-                src="/tasks.png"
+                src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/tasks.png"
                 alt="Task app mockup"
                 fill
                 sizes="(max-width: 1024px) 100vw, 360px"
@@ -63,7 +63,7 @@ export default function PortfolioSection() {
           <article className="card">
             <div className="card__media">
               <Image
-                src="/weather.png"
+                src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/weather.png"
                 alt="Weather dashboard mockup"
                 fill
                 sizes="(max-width: 1024px) 100vw, 360px"

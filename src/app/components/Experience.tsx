@@ -28,7 +28,7 @@ export default function ExperienceSection() {
 
             {/* Rocket img */}
             <Image
-              src="/rocket.png"
+              src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/rocket.png"
               alt="Rocket illustration"
               width={120}
               height={120}
@@ -99,7 +99,7 @@ export default function ExperienceSection() {
 
             {/* Moon img */}
             <Image
-              src="/moon.png"
+              src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/moon.png"
               alt="Moon illustration"
               width={160}
               height={160}

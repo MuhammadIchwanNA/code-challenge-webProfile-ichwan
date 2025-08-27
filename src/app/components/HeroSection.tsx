@@ -1,14 +1,15 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -62,26 +63,27 @@ const HeroSection: React.FC = () => {
             </em>
           </div>
 
-          <button
-            className="btn"
-            onClick={scrollToContact}
-          >
+          <button className="btn" onClick={scrollToContact}>
             Hire me!
           </button>
         </div>
 
         {/* Right column */}
         <div className="hero__media">
-          <img
+          <Image
             className="hero__photo"
-            src="/avatar.jpg"
-            alt="Ichwan portrait"
+            src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/avatar.jpg"
+            alt="Profile"
+            width={400}
+            height={400}
           />
-          <img
+          <Image
             className="hero__sticker"
-            src="/doge.png"
+            src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/doge.png"
             alt=""
             aria-hidden="true"
+            width={120}
+            height={120}
           />
         </div>
       </div>

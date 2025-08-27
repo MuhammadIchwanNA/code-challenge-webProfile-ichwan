@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 
 const AboutMe = () => {
   return (
@@ -20,16 +20,16 @@ const AboutMe = () => {
             Right now, I'm exploring React, Next.js, and Web3. Some days I'm
             coding, some days I'm reflecting, and some days I'm just laughing at
             memes — but all of it is part of learning.
-            <br /> <br />I like clean, simple solutions (both in code and in life). I
-            believe in first-principles thinking: stripping away noise until you
-            see what really drives things. That's the mindset I bring to every
-            project. This site is a small space to track what I'm building,
-            where I'm growing, and maybe where I'm headed next."
+            <br /> <br />I like clean, simple solutions (both in code and in
+            life). I believe in first-principles thinking: stripping away noise
+            until you see what really drives things. That's the mindset I bring
+            to every project. This site is a small space to track what I'm
+            building, where I'm growing, and maybe where I'm headed next."
           </p>
 
           {/* Image */}
           <Image
-            src="/successkid.png"
+            src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/successkid.png"
             alt="Success Kid Meme"
             width={200}
             height={200}

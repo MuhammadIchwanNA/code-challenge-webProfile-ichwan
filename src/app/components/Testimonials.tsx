@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 type Testimonial = {
   blurb: string;
@@ -18,13 +19,14 @@ const QUOTE = (
   </svg>
 );
 
+// 1. Update avatar URLs in DATA to use your Backendless image URLs
 const DATA: Testimonial[] = [
   {
     blurb:
       `Ichwan always finds a way to make complex problems sound simple. He's the guy you want on your team when code feels overwhelming — calm, patient, and with a sense of humor.`,
     name: "siti.",
     role: "Bootcamp Teammate",
-    avatar: "/testimonial3.jpg", // woman
+    avatar: "https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/testimonial3.jpeg",
     alt: "Siti smiling",
   },
   {
@@ -32,7 +34,7 @@ const DATA: Testimonial[] = [
       `Working with Ichwan was effortless. He asks sharp questions, ships quickly, and keeps the team grounded when deadlines get noisy.`,
     name: "joni.",
     role: "working partner",
-    avatar: "/testimonial2.jpg", // man
+    avatar: "https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/testimonial2.jpg",
     alt: "joni smiling",
   },
   {
@@ -40,7 +42,7 @@ const DATA: Testimonial[] = [
       `Reliable, thoughtful, and curious. Ichwan bridges design and engineering smoothly and never hesitates to help others level up.`,
     name: "budi.",
     role: "Project Lead",
-    avatar: "/testimonial1.jpg", // man
+    avatar: "https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/testimonial1.jpg",
     alt: "Budi smiling",
   },
 ];
@@ -117,10 +119,12 @@ export default function Testimonials() {
                   </p>
 
                   <div className="testimonials__author">
-                    <img
+                    <Image
                       src={t.avatar}
                       alt={t.alt}
                       className="testimonials__avatar"
+                      width={48}
+                      height={48}
                     />
                     <div className="testimonials__info">
                       <div className="testimonials__name">{t.name}</div>

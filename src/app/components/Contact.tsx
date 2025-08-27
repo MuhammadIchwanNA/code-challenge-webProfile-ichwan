@@ -2,6 +2,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import Image from "next/image";
 
 // Validation schema
 const ContactSchema = Yup.object().shape({
@@ -49,10 +50,12 @@ export default function ContactSection() {
       <div className="contact__inner">
         {/* Left: Portrait */}
         <div className="contact__portrait">
-          <img
-            src="/wallstreet.jpg"
+          <Image
+            src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/wallstreet.jpg"
             alt="Portrait / contact visual"
             className="contact__portraitImg"
+            width={400}
+            height={400}
           />
         </div>
 

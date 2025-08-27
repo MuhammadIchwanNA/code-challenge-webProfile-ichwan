@@ -245,6 +245,18 @@ body {
   z-index: -1;
   transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .hero__sticker {
+    top: -70px;
+    right: 10px;
+    width: 100px;
+    min-width: 60px;
+    max-width: 100px;
+    transform: rotate(10deg);
+  }
+}
+
 .hero__media:hover .hero__sticker {
   transform: rotate(50deg) translateX(-20px);
 }
@@ -853,6 +865,17 @@ body {
   .portfolio__grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 480px);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__decorative-img {
+    top: 10px;
+    left: 60%;
+    transform: translateX(-50%) rotate(10deg);
+    width: 80px;
+    min-width: 60px;
+    max-width: 100px;
   }
 }
 
@@ -1735,3 +1758,4 @@ body {
   margin-top: 4px;
   font-weight: 600;
 }
+

@@ -39,7 +39,7 @@ export default function SkillsSection() {
 
         {/* meme top right corner */}
         <Image 
-          src="/runningfeatures.png" 
+          src="https://backendlessappcontent.com/647804CC-0709-49FF-B21E-59553D293101/2F9D7F9B-600F-4CA5-828C-7DFBA52DB5FA/files/imageWebProfile/runningfeatures.png" 
           alt="Running features illustration" 
           width={280} 
           height={300}
